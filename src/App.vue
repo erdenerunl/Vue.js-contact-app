@@ -1,26 +1,38 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <header>Contact Card App</header>
+    <div class="container">
+      <div class="contact--card--app">
+        <contact-section v-for="(contact, index) in 10" :key="index" :contactData="contactData" />
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import ContactSection from './components/ContactSection.vue'
 
 export default {
-  name: 'App',
   components: {
-    HelloWorld
-  }
+    ContactSection
+  },
+  data(){
+    return {
+      contactData : {
+        id : 1,
+        name : 'Gökhan Kandemir',
+        title : 'Senior Software Engineer at PureSOL',
+        url : '#',
+        linkCounter : 150,
+      },
+      
+    }
+  },
+  
+
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 </style>
