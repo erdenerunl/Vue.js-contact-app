@@ -17,7 +17,7 @@
         <button @click="addContact" class="btn-sm mr-10 btn-info">
           Bağlantı Kur
         </button>
-        <button class="btn-sm btn-default">Yoksay</button>
+        <button @click="skipContact" class="btn-sm btn-default">Yoksay</button>
       </div>
     </div>
   </div>
@@ -35,13 +35,18 @@ export default {
         .then((response) => {
           axios
             .delete(
-              `ttp://localhost:3000/contact-requests/${this.contactData.id}`
+              `http://localhost:3000/contact-requests/${this.contactData.id}`
             )
             .then((response) => {
               this.$emit("add-event", this.contactData);
             });
         });
     },
+    skipContact(){
+      axios.delete(`http://localhost:3000/contact-requests/${this.contactData.id}`).then(() => {
+        this.$emit('skip-event' , this.contactData)
+      })
+    }
   },
 };
 </script>

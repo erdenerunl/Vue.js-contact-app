@@ -1,38 +1,5 @@
 {
-  "contact-requests": [
-    {
-      "id": 1,
-      "name": "Erdener Ünal",
-      "title": "İşsiz",
-      "url": "#",
-      "linkCounter": 100,
-      "photoLink": "https://picsum.photos/seed/picsum/200/300"
-    },
-    {
-      "id": 2,
-      "name": "Özdener Ünal",
-      "title": "Öğrenci",
-      "url": "#",
-      "linkCounter": 500,
-      "photoLink": "https://picsum.photos/seed/picsum/200/300"
-    },
-    {
-      "id": 3,
-      "name": "Hilal Odabaşı",
-      "title": "CEO of ING Bank",
-      "url": "#",
-      "linkCounter": 20,
-      "photoLink": "https://picsum.photos/seed/picsum/200/300"
-    },
-    {
-      "id": 4,
-      "name": "Faruk Coş",
-      "title": "Yönetmen",
-      "url": "#",
-      "linkCounter": 505,
-      "photoLink": "https://picsum.photos/seed/picsum/200/300"
-    }
-  ],
+  "contact-requests": [],
   "contacts": [
     {
       "id": 1,
@@ -44,10 +11,18 @@
     },
     {
       "id": 2,
-      "name": "Özdener Ünal",
-      "title": "Öğrenci",
+      "name": "Faruk Coş",
+      "title": "Yönetmen",
       "url": "#",
-      "linkCounter": 500,
+      "linkCounter": 505,
+      "photoLink": "https://picsum.photos/seed/picsum/200/300"
+    },
+    {
+      "id": 3,
+      "name": "Erdener Ünal",
+      "title": "İşsiz",
+      "url": "#",
+      "linkCounter": 100,
       "photoLink": "https://picsum.photos/seed/picsum/200/300"
     },
     {
